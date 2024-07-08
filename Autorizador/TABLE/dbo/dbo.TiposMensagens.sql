@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[TiposMensagens] ( 
+	[Codigo] INT IDENTITY(1,1) NOT NULL
+	,[Mensagem] CHAR(4) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,[Descricao] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[MensagemCorrespondente] CHAR(4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,CONSTRAINT [PK_TiposMensagem] PRIMARY KEY CLUSTERED (Codigo ASC) WITH FILLFACTOR = 80
+	,CONSTRAINT [UQ__TiposMensagens__46E78A0C] UNIQUE NONCLUSTERED (Mensagem ASC) WITH FILLFACTOR = 80
+	);

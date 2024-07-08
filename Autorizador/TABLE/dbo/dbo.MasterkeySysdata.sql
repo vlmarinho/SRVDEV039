@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[MasterkeySysdata] ( 
+	[Indice] INT IDENTITY(1,1) NOT NULL
+	,[Chave] VARCHAR(32) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,CONSTRAINT [pk_Aut_MasterkeySysdata] PRIMARY KEY CLUSTERED (Indice ASC) WITH FILLFACTOR = 80
+	);
