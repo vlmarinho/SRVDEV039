@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[ReprocessarTrnCielo] ( 
+	[Codigo] FLOAT NULL
+	,[ESTAB     ] NVARCHAR(510) NULL
+	,[TERMINAL] NVARCHAR(510) NULL
+	,[DATA] NVARCHAR(510) NULL
+	,[CARTAO] NVARCHAR(510) NULL
+	,[VALOR] FLOAT NULL
+	,[NSU   ] NVARCHAR(510) NULL
+	,[CodigoEstabelecimento] INT NULL
+	,[BaseOrigem] CHAR(1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[TpoPrdCodigo] INT NULL
+	,[CodResposta] INT NULL
+	,[Descricao] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[NSU_POLICARD] VARCHAR(6) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Processado] BIT NULL CONSTRAINT [DF__Reprocess__Proce__57A801BA] DEFAULT ((0))
+	);

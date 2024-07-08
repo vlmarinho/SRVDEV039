@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[EMV_Produtos] ( 
+	[Codigo] INT IDENTITY(1,1) NOT NULL
+	,[NomeProduto] CHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[AID] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[BinINI] CHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[BinFIM] CHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[TipoProduto] CHAR(2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Categoria] CHAR(1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[DadosEMVProduto] VARCHAR(6) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[CodigoAid] CHAR(3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Ativo] BIT NULL
+	,[Data] DATETIME NULL
+	,[IdBandeira] CHAR(3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[ProdutoMigrado] BIT NULL CONSTRAINT [DF__EMV_Produ__Produ__55BFB948] DEFAULT ((0))
+	,CONSTRAINT [PK_EMV_Produtos] PRIMARY KEY CLUSTERED (Codigo ASC) WITH FILLFACTOR = 80
+	);

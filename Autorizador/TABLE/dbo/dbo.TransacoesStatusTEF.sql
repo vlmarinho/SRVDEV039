@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[TransacoesStatusTEF] ( 
+	[TrnTefCodigo] INT IDENTITY(1,1) NOT NULL
+	,[Estabelecimento] INT NOT NULL
+	,[Terminal] VARCHAR(8) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,[Status] CHAR(1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,[Data] DATETIME NOT NULL
+	,CONSTRAINT [PK__TransacoesStatus__2D7CBDC4] PRIMARY KEY CLUSTERED (TrnTefCodigo ASC) WITH FILLFACTOR = 80
+	);

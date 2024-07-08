@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[MensagensIdPositivaBco24Horas] ( 
+	[Codigo] INT IDENTITY(1,1) NOT NULL
+	,[Mensagem] CHAR(28) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,[Mensagem2] CHAR(28) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[TamMascara] CHAR(2) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+	,[Mascara] VARCHAR(16) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,CONSTRAINT [PK_MensagensIdPositivaBco24Horas] PRIMARY KEY CLUSTERED (Codigo ASC) WITH FILLFACTOR = 80
+	,CONSTRAINT [UQ__MensagensIdPosit__688874F9] UNIQUE NONCLUSTERED (Mensagem ASC) WITH FILLFACTOR = 80
+	);

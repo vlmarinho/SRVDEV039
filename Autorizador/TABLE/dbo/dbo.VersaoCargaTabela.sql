@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[VersaoCargaTabela] ( 
+	[Codigo] INT IDENTITY(1,1) NOT NULL
+	,[Versao] CHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Ativo] BIT NULL
+	,[Data] DATETIME NULL
+	,CONSTRAINT [PK_VersaoCargaTabela] PRIMARY KEY CLUSTERED (Codigo ASC) WITH FILLFACTOR = 80
+	);

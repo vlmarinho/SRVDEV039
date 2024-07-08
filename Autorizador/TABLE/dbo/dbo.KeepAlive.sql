@@ -1,0 +1,20 @@
+CREATE TABLE [dbo].[KeepAlive] ( 
+	[Codigo] INT IDENTITY(1,1) NOT NULL
+	,[DataHora] DATETIME NULL
+	,[CodEstabelecimento] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[NomeEstabelecimento] VARCHAR(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Cidade] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[UF] CHAR(2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Aplicacao] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Numero] CHAR(8) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[NumSerie] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Modelo] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Versao] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[TipoConexao] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[Operadora] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[SimId] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[InformacoesPos] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+	,[ErrorCode] INT NULL
+	,[ErrorMessage] NVARCHAR(4096) NULL
+	,CONSTRAINT [PK_KeepAlive] PRIMARY KEY CLUSTERED (Codigo DESC) WITH FILLFACTOR = 80
+	);
